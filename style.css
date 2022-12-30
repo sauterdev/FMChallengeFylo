@@ -1,0 +1,9 @@
+* {
+  box-sizing: border-box;  
+}
+
+body {
+    background: hsl(228, 56%, 26%); 
+    width: 1440px;
+
+}
