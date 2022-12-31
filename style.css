@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;  
+  margin: 0;
 }
 
 body {
@@ -7,6 +8,7 @@ body {
     margin: 25px  auto;
     width: 1440px;
     height: 700px;
+    color: white;
    
 }
 
@@ -28,20 +30,74 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-    width: 75%
+    gap: 2rem;
+    width: 100%
 }
 
 .left-content, .right-content {
     background: hsl(228, 56%, 26%);
 }
 
+/* Start of left side content display */
+
 .left-content {
-    display: flex;
+    display: flex; 
     flex-direction: column;
     justify-content: center;
     align-items: center; 
     width: 25%;
-    border-top-right-radius: 5rem;
-    height: 200px;
+    border-radius: .5rem 5rem .5rem .5rem;
+    height: 200px;   
 }
+
+
+.icons-group {
+    margin: 0 8rem 0 0;
+}
+
+.icons {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 1.5rem;
+    gap: 1rem;
+}
+
+.icon-square {
+    background-color: hsl(229, 57%, 11%);
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: .5rem;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+/* End of left side content display */
+
+/* Start of right side content display */
+
+.right-content {
+    width: 40%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: .5rem .5rem .5rem .5rem;
+    align-self: end;
+}
+
+.data-meter {
+  display: flex;
+  justify-content: space-between;  
+}
+
+.slidecontainer {
+width: 100%;
+}
+
+.slider {
+    appearance: none;
+}
+
